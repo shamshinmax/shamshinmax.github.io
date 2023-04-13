@@ -3,11 +3,13 @@ var time = 0;
 let btn = document.getElementById("btn");
 const times = document.getElementById("startTime");
 
-startTime.addEventListener("input", () => {
-    time = startTime.value;
+times.addEventListener("input", () => {
+    time = times.value;
+    console.log(time)
 }, false);
 
 btn.addEventListener("click", function(){
     var place = document.getElementById("selection").value;
+    console.log(time+" "+place)
     tg.sendData(time+" "+place);
 });
