@@ -10,6 +10,7 @@ times.addEventListener("input", () => {
 
 btn.addEventListener("click", function(){
     var place = document.getElementById("selection").value;
-    console.log(time+" "+place)
+    console.log(time+" "+place);
+    tg.answerWebAppQuery("123")
     tg.sendData(time+" "+place);
 });
