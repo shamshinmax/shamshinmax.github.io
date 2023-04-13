@@ -2,7 +2,6 @@
 
 let btn = document.getElementById("btn");
 const times = document.getElementById("startTime");
-var place = document.getElementById("selection").value;
 
 
 console.log("hi");
@@ -14,5 +13,6 @@ times.addEventListener("input", () => {
 
 
 btn.addEventListener("click", function(){
+    var place = document.getElementById("selection").value;
     console.log(time+" "+place);
 });
