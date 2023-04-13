@@ -1,5 +1,5 @@
 
-
+var time = 0
 let btn = document.getElementById("btn");
 const times = document.getElementById("startTime");
 
