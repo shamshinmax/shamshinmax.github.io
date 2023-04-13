@@ -7,9 +7,10 @@ var place = document.getElementById("selection").value;
 
 console.log("hi");
 
-startTime.addEventListener("input", () => {
+times.addEventListener("input", () => {
     time = startTime.value;
 }, false);
+
 
 
 btn.addEventListener("click", function(){
