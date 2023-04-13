@@ -2,7 +2,7 @@ let tg = window.Telegram.WebApp;
 var time = 0;
 let btn = document.getElementById("btn");
 const times = document.getElementById("startTime");
-tg.ThemeParams.secondary_bg_color = "#FFFFFF";
+tg.secondary_bg_color = "#FFFFFF";
 times.addEventListener("input", () => {
     time = times.value;
 }, false);
