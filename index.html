@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/materialize.css">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Title</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-grid">
+        <div class="text-card">Lorem ipsum dolor sit amet.</div>
+        <form class="time-card">
+          <label for="startTime">Start time</label>
+          <input type="time" id="startTime" />
+        </form>
+        <div class="input-field col s12">
+          <select>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        <div class="button-card"><a class="a-card">Отправить</a></div>
+      </div>
+    </div>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+  </script>
+</body>
+</html>
