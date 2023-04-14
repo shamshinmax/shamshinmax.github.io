@@ -6,7 +6,7 @@ times.addEventListener("input", () => {
     time = times.value;
 }, false);
 if (tg.colorScheme == "dark"){
-    tg.setBackgroundColor("#001a26");
+    tg.setBackgroundColor(bg_color,"#001a26");
 }
 if (tg.colorScheme == "light"){
     tg.setBackgroundColor("#FFFFFF");
