@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp;
-tg.setBackgroundColor("white")
+tg.setBackgroundColor("#ffffff")
 var time = 0;
 let btn = document.getElementById("btn");
 const times = document.getElementById("startTime");
