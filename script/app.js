@@ -6,7 +6,12 @@ const times = document.getElementById("startTime");
 times.addEventListener("input", () => {
     time = times.value;
 }, false);
-tg.setBackgroundColor("#FFFFFF");
+if (tg.colorScheme == "dark"){
+    tg.setBackgroundColor(bg_color="#001a26");
+}
+if (tg.colorScheme == "light"){
+    tg.setBackgroundColor("#FFFFFF");
+}
 
 btn.addEventListener("click", function(){
     var place = document.getElementById("selection").value;
