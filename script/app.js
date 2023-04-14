@@ -1,6 +1,6 @@
 let tg = window.Telegram.WebApp;
 tg.setBackgroundColor("#ffffff")
-var time = 0;
+
 const date = new Date();
 const timeControl = document.querySelector('input[type="time"]');
 let hours = date.getHours();
@@ -11,7 +11,7 @@ if (date.getMinutes() < 10){
 if (date.getHours() < 10){
    hours = "0" + date.getHours();
 }
-console.log(hours + ":" + minutes)
+var time = hours + ":" + minutes
 timeControl.value = hours + ":" + minutes;
 let btn = document.getElementById("btn");
 const times = document.getElementById("startTime");
