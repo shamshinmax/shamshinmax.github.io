@@ -6,12 +6,12 @@ const timeControl = document.querySelector('input[type="time"]');
 let hours = date.getHours();
 let minutes = date.getMinutes();;
 if (date.getMinutes() < 10){
-    minutes = "0" + date.getMinutes();
+   minutes = "0" + date.getMinutes();
 }
 if (date.getHours() < 10){
    hours = "0" + date.getHours();
 }
-console.log(hours + ":" + minutes;)
+console.log(hours + ":" + minutes)
 timeControl.value = hours + ":" + minutes;
 let btn = document.getElementById("btn");
 const times = document.getElementById("startTime");
