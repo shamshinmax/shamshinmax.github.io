@@ -6,7 +6,7 @@ const times = document.getElementById("startTime");
 times.addEventListener("input", () => {
     time = times.value;
 }, false);
-tg.themeParams.bg_color = "#001a26"
+tg.bg_color = "#001a26"
 if (tg.colorScheme == "dark"){
     tg.setBackgroundColor("#001a26");
 }
