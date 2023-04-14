@@ -1,9 +1,6 @@
 html {
   box-sizing: border-box;
 }
-:root {
-  —tg-theme-bg-color: #001a26;
-}
 *, *::before, *::after {
   box-sizing: inherit;
 }
