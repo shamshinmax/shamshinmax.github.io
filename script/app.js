@@ -11,7 +11,7 @@ if (date.getMinutes() < 10){
 if (date.getHours() < 10){
    hours = "0" + date.getHours();
 }
-console.log()
+console.log(hours + ":" + minutes;)
 timeControl.value = hours + ":" + minutes;
 let btn = document.getElementById("btn");
 const times = document.getElementById("startTime");
