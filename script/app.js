@@ -6,8 +6,9 @@ const times = document.getElementById("startTime");
 times.addEventListener("input", () => {
     time = times.value;
 }, false);
+tg.themeParams.bg_color = "#001a26"
 if (tg.colorScheme == "dark"){
-    tg.setBackgroundColor(bg_color="#001a26");
+    tg.setBackgroundColor("#001a26");
 }
 if (tg.colorScheme == "light"){
     tg.setBackgroundColor("#FFFFFF");
