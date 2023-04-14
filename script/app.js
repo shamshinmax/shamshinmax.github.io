@@ -7,11 +7,9 @@ times.addEventListener("input", () => {
 }, false);
 if (tg.colorScheme == "dark"){
     tg.setBackgroundColor("#001a26");
-    tg.ThemeParams.bg_color ="#001a26"
 }
 if (tg.colorScheme == "light"){
     tg.setBackgroundColor("#FFFFFF");
-    tg.ThemeParams.bg_color = "#FFFFFF"
 }
 
 btn.addEventListener("click", function(){
