@@ -22,5 +22,5 @@ times.addEventListener("input", () => {
 
 btn.addEventListener("click", function(){
     var place = document.getElementById("selection").value;
-    tg.sendData(time+" "+place+" "+tg.colorScheme);
+    tg.sendData('1'+time+" "+place+" "+tg.colorScheme);
 });
