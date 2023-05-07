@@ -1,10 +1,24 @@
 let tg = window.Telegram.WebApp;
 tg.setBackgroundColor("#ffffff")
 
-const date = new Date();
+
 const timeControl = document.querySelector('input[type="time"]');
+function date(){
+  const date = new Date();
+   let hours = date.getHours();
+   let minutes = date.getMinutes();
+   if (date.getMinutes() < 10){
+      minutes = "0" + date.getMinutes();
+   }
+   if (date.getHours() < 10){
+      hours = "0" + date.getHours();
+   }
+   var time = hours + ":" + minutes
+   return time
+}
+const date = new Date();
 let hours = date.getHours();
-let minutes = date.getMinutes();;
+let minutes = date.getMinutes();
 if (date.getMinutes() < 10){
    minutes = "0" + date.getMinutes();
 }
