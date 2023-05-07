@@ -1,6 +1,8 @@
 let tg = window.Telegram.WebApp;
 tg.setBackgroundColor("#ffffff")
 
+var timing = document.getElementById("now")
+
 
 const timeControl = document.querySelector('input[type="time"]');
 function datas(){
@@ -16,22 +18,31 @@ function datas(){
    var time = hours + ":" + minutes
    return time
 }
-const date = new Date();
-let hours = date.getHours();
-let minutes = date.getMinutes();
-if (date.getMinutes() < 10){
-   minutes = "0" + date.getMinutes();
-}
-if (date.getHours() < 10){
-   hours = "0" + date.getHours();
-}
-var time = hours + ":" + minutes
-timeControl.value = hours + ":" + minutes;
-let btn = document.getElementById("btn");
 const times = document.getElementById("startTime");
+times.value = datas()
+timing.innerHTML = '(от '+datas()+ ' до ' + '23:59)';
+var time = times.value;
 times.addEventListener("input", () => {
-    time = times.value;
+   if (times.value < datas()){
+      timing.innerHTML = 'Введите значение '+'от '+datas()+ ' до ' + '23.59';
+      time = 0
+   }
+   else {
+      timing.innerHTML = '(от '+datas()+ ' до ' + '23.59)';
+      time = times.value;
+   }
+   
+   
 }, false);
+btn.addEventListener("click", function(){
+    if (time != 0){
+          var place = document.getElementById("selection").value;
+          console.log(datas())
+          tg.sendData('1'+datas()+" "+place+" "+tg.colorScheme);
+    }
+
+    
+});
 
 
 btn.addEventListener("click", function(){
