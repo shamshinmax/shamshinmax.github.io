@@ -3,7 +3,7 @@ tg.setBackgroundColor("#ffffff")
 
 
 const timeControl = document.querySelector('input[type="time"]');
-function date(){
+function datas(){
   const date = new Date();
    let hours = date.getHours();
    let minutes = date.getMinutes();
