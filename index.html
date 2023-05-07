@@ -15,7 +15,8 @@
         <div class="text-card">Random Coffee☕️</div>
         <p>Время</p>
         <form class="time-card">
-          <input style='width:130px' type="time" id="startTime" />
+          <input style='width:130px' type="time" id="startTime" min='date();' max='23:59'/>
+          <span class="validity"></span>
         </form>
         <div class="input-field col s12">
           <p>Место</p>
