@@ -24,11 +24,9 @@ timing.innerHTML = '(от '+datas()+ ' до ' + '23:59)';
 var time = times.value;
 times.addEventListener("input", () => {
    if (times.value < datas()){
-      timing.innerHTML = 'Введите значение '+'от '+datas()+ ' до ' + '23.59';
       time = 0
    }
    else {
-      timing.innerHTML = '(от '+datas()+ ' до ' + '23.59)';
       time = times.value;
    }
    
