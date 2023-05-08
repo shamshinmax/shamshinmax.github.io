@@ -36,14 +36,8 @@ btn.addEventListener("click", function(){
     if (time != 0){
           var place = document.getElementById("selection").value;
           console.log(datas())
-          tg.sendData('1'+datas()+" "+place+" "+tg.colorScheme);
+          tg.sendData('1'+time+" "+place+" "+tg.colorScheme);
     }
 
     
-});
-
-
-btn.addEventListener("click", function(){
-    var place = document.getElementById("selection").value;
-    tg.sendData('1'+time+" "+place+" "+tg.colorScheme);
 });
