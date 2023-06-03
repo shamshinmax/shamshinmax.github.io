@@ -20,7 +20,7 @@ function datas(){
 }
 const times = document.getElementById("startTime");
 times.value = datas()
-timing.innerHTML = '(от '+datas()+ ' до ' + '23:59)';
+timing.innerHTML = 'Встречи назначаются с '+datas()+ ' до ' + '23:59';
 var time = times.value;
 times.addEventListener("input", () => {
    if (times.value < datas()){
