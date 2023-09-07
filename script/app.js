@@ -3,11 +3,6 @@ tg.setBackgroundColor("#ffffff")
 
 const message = document.getElementById('TITLE');
 const local = document.getElementById('local');
-console.log(message.value); // 👉️ ""
-message.addEventListener('input', function handleChange(event) {
-  console.log(event.target.value);
-
-});
 function isTextInput(node) {
     return ['INPUT', 'TEXTAREA'].indexOf(node.nodeName) !== -1;
 }
@@ -17,10 +12,6 @@ document.addEventListener('touchstart', function(e) {
         document.activeElement.blur();
     }
 }, false);
-local.addEventListener('input', function handleChange(event) {
-    console.log(event.target.value);
-
-  });
 let btn = document.getElementById("btn");
 
 btn.addEventListener("click", function(){
