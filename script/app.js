@@ -1,43 +1,27 @@
 let tg = window.Telegram.WebApp;
 tg.setBackgroundColor("#ffffff")
 
-var timing = document.getElementById("now")
+const message = document.getElementById('TITLE');
+const local = document.getElementById('local');
+console.log(message.value); // 👉️ ""
+message.addEventListener('input', function handleChange(event) {
+  console.log(event.target.value);
 
+});
+local.addEventListener('input', function handleChange(event) {
+    console.log(event.target.value);
 
-const timeControl = document.querySelector('input[type="time"]');
-function datas(){
-  const date = new Date();
-   let hours = date.getHours();
-   let minutes = date.getMinutes();
-   if (date.getMinutes() < 10){
-      minutes = "0" + date.getMinutes();
-   }
-   if (date.getHours() < 10){
-      hours = "0" + date.getHours();
-   }
-   var time = hours + ":" + minutes
-   return time
-}
-const times = document.getElementById("startTime");
-times.value = datas()
-timing.innerHTML = 'Встречи назначаются только на текущий день';
-var time = times.value;
-times.addEventListener("input", () => {
-   if (times.value < datas()){
-      time = 0
-   }
-   else {
-      time = times.value;
-   }
-   
-   
-}, false);
+  });
+let btn = document.getElementById("btn");
+
 btn.addEventListener("click", function(){
-    if (time != 0){
-          var place = document.getElementById("selection").value;
-          console.log(datas())
-          tg.sendData('1'+time+" "+place+" "+tg.colorScheme);
-    }
+    let post = document.getElementById("TITLE").value;
+    let local = document.getElementById("local").value;
+    let mest = document.getElementById("count").value;
+    let time = document.getElementById("startTime").value;
 
     
+    if (mest != '' && local != '' && post != '' && time != '')
+
+        tg.sendData(post+" "+local+" "+mest+" "+time);
 });
