@@ -1,33 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/materialize.css">
-  <link rel="stylesheet" href="style/style.css">
-  <title>Random Coffee</title>
-</head>
-<body>
-  <div class="container">
-    <div class="card">
-      <div class="card-grid">
-        <div class="text-card">Мероприятия от резидентов🏆</div>
-          <p>Дата</p>
-        <input id="date" type="date" style='width:130px;max-width: 150px;margin: 0 auto;'  name="bday" />
+        <p>Название</p>
+        <input style='width:200px;max-width: 250px;margin: 0 auto;' type="text" id="naz" required/>
+        <p>Дата</p>
+        <input type="date" style='width:200px;max-width: 250px;margin: 0 auto;' id="date" />
         <p>Время</p>
         <small id="now"></small>
         <form class="time-card">
           <input style='width:130px' type="time" id="startTime" required/>
           <span class="validity"></span>
         </form>
+        <p>Телефон для связи:</p>
+        <input type="text" style='width:200px;max-width: 250px;margin: 0 auto;' id="tel" />
         <p>Текст для анонса</p>
-        <textarea style="width:300px; height:150px;" rows="1" cols="5" id="TITLE"></textarea>
+        <textarea style="width:300px; height:150px;" rows="1" cols="5" id="TITLE">
+        </textarea>
         <div class="input-field col s12">
           <p>Место</p>
-          <form onsubmit="document.getElementById('local').blur();">
-                <input style='width:130px' type="text" id="local" required/>
-           </form>
+          <input style='width:200px' type="text" id="local" required/>
         </div>
         <div class="input-field col s13">
           <p>Количество участников</p>
@@ -41,6 +29,8 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
           </select>
         </div>
         <div class="button-card" id="btn"><a class="a-card">Отправить</a></div>
