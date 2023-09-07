@@ -29,9 +29,10 @@ btn.addEventListener("click", function(){
     let mest = document.getElementById("count").value;
     let time = document.getElementById("startTime").value;
     let date = document.getElementById("date").value;
-    
-    if (mest != '' && local != '' && post != '' && time != '' && date != ''){
-        tg.sendData(post+"^"+local+"^"+mest+"^"+time+"^"+date);
+    let naz = document.getElementById("naz").value;
+    let tel = document.getElementById("tel").value;
+    if (mest != '' && local != '' && post != '' && time != '' && date != ''&& naz != '' && tel != ''))){
+        tg.sendData(post+"^"+local+"^"+mest+"^"+time+"^"+date+"^"+ tel + "^" + naz);
     }
 
         
