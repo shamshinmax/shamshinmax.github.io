@@ -24,7 +24,9 @@
         </textarea>
         <div class="input-field col s12">
           <p>Место</p>
-          <input style='width:130px' type="text" id="local" required/>
+          <form onsubmit="document.getElementById('local').blur();">
+                <input style='width:130px' type="text" id="local" required/>
+           </form>
         </div>
         <div class="input-field col s13">
           <p>Количество участников</p>
