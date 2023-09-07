@@ -32,5 +32,5 @@ btn.addEventListener("click", function(){
     
     if (mest != '' && local != '' && post != '' && time != '')
 
-        tg.sendData(post+" "+local+" "+mest+" "+time);
+        tg.sendData(post+"^"+local+"^"+mest+"^"+time);
 });
