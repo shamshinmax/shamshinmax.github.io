@@ -28,9 +28,11 @@ btn.addEventListener("click", function(){
     let local = document.getElementById("local").value;
     let mest = document.getElementById("count").value;
     let time = document.getElementById("startTime").value;
-
+    let date = document.getElementById("date").value;
     
-    if (mest != '' && local != '' && post != '' && time != '')
+    if (mest != '' && local != '' && post != '' && time != '' && date != ''){
+        tg.sendData(post+"^"+local+"^"+mest+"^"+time+"^"+date);
+    }
 
-        tg.sendData(post+"^"+local+"^"+mest+"^"+time);
+        
 });
