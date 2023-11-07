@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp;
-tg.setBackgroundColor("#ffffff")
+tg.setBackgroundColor("#1F3533")
 
 const message = document.getElementById('TITLE');
 const local = document.getElementById('local');
