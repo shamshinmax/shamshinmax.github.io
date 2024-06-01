@@ -22,9 +22,8 @@ btn.addEventListener("click", function(){
     let date = document.getElementById("date").value;
     let naz = document.getElementById("naz").value;
     let tel = document.getElementById("tel").value;
-    let cost = document.getElementById("cost").value;
-    if (mest != '' && local != '' && post != '' && time != '' && date != ''&& naz != '' && tel != '' && cost != ''){
-        tg.sendData(post+"^"+local+"^"+mest+"^"+time+"^"+date+"^"+ tel + "^" + naz + "^" + cost);
+    if (mest != '' && local != '' && post != '' && time != '' && date != ''&& naz != '' && tel != ''){
+        tg.sendData(post+"^"+local+"^"+mest+"^"+time+"^"+date+"^"+ tel + "^" + naz + "^" + 0);
     }
 
         
