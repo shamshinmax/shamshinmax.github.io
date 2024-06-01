@@ -23,7 +23,7 @@ btn.addEventListener("click", function(){
     let naz = document.getElementById("naz").value;
     let tel = document.getElementById("tel").value;
     if (mest != '' && local != '' && post != '' && time != '' && date != ''&& naz != '' && tel != ''){
-        tg.sendData(post+"^"+local+"^"+mest+"^"+time+"^"+date+"^"+ tel + "^" + naz + "^" + 0);
+        tg.sendData(post+"^"+local+"^"+mest+"^"+time+"^"+date+"^"+ tel + "^" + naz + "^0");
     }
 
         
