@@ -6,44 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/materialize.css">
   <link rel="stylesheet" href="style/style.css">
-  <title>Random Coffee</title>
 </head>
-<body  style="background-color: rgb(26, 44, 43)">
+<body  style="background-color: rgb(238, 100, 153)">
   <div class="container">
-    <div class="card" style="background-color: rgb(58, 95, 92)">
+    <div class="card" style="background-color: rgb(238, 100, 153)">
       <div class="card-grid">
-        <div class="text-card">Мероприятия от участниц</div>
-        <p>Название ▼</p>
+        <div class="text-card">Приглашаю подружек</div>
+        <p>Название </p>
         <form onsubmit="document.getElementById('naz').blur();">
             <input style='width:200px;max-width: 250px;margin: 0 auto;color:#ffffff; ' type="text" id="naz" required/>
         </form>
         
-        <p>Дата ▼</p>
+        <p>Дата </p>
         <input type="date" style='width:200px;max-width: 250px;margin: 0 auto; color:#ffffff;' id="date" />
-        <p>Время ▼</p>
+        <p>Время </p>
         <small id="now"></small>
         <form class="time-card">
           <input style='width:130px; color:#ffffff;' type="time" id="startTime" required/>
           <span class="validity"></span>
         </form>
-        <p>Телефон для связи ▼</p>
+        <p>Телефон для связи </p>
         <form onsubmit="document.getElementById('tel').blur();">
           <input type="text" style='width:200px;max-width: 250px;margin: 0 auto; color:#ffffff;' id="tel" />
         </form>
         
-        <p>Текст для анонса ▼</p>
+        <p>Текст для анонса </p>
         <form onsubmit="document.getElementById('TITLE').blur();">
           <textarea style="width:300px; height:150px;color:#ffffff;;" rows="1" cols="5" id="TITLE"></textarea>
         </form>
         
         <div class="input-field col s12">
-          <p>Локация ▼</p>
+          <p>Локация </p>
           <form onsubmit="document.getElementById('local').blur();">
             <input style='width:200px;color:#ffffff;' type="text" id="local" required/>
           </form>
         </div>
         <div class="input-field col s13">
-          <p>Количество участников ▼</p>
+          <p>Количество участников </p>
           <select style='width:170px' id="count">
             <option value="2">2</option>
             <option value="3">3</option>
@@ -62,6 +61,7 @@
       </div>
     </div>
   </div>
+  <img style='height: 500px; width: 500px;' src="IMG_2541.PNG">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script src="script/app.js"></script>
   

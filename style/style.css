@@ -15,8 +15,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'arial black', bold;
-  color:#ffffff;
-  font-weight: 400;
+  color:rgb(255, 0, 0);
+  font-weight: 100;
   
 }
 h1, h2, h3, h4, h5, h6, a, hr {
@@ -25,7 +25,10 @@ h1, h2, h3, h4, h5, h6, a, hr {
   margin: 0;
 }
 p {
-  font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
 
   
 }
@@ -45,7 +48,6 @@ a {
   max-width: 350px;
   margin: auto;
 
-  border-radius: 10px;
   
 }
 .card-grid {
@@ -53,25 +55,31 @@ a {
   text-align: center;
   
 }
+img{
+  position: absolute;
+  top:80%;
+  left: 50%;
+}
 .a-card {
   display: inline-block;
   padding: 10px 20px;
   border: none;
-  background: #ffffff;
+  background:   rgb(255, 0, 0);
   border-radius: 10px;
-  background-color: rgb(31,53,51);
+  background-color: white;
   text-transform: uppercase;
   font-weight: 700;
   transition: background .2s linear;
 }
 .a-card:hover {
   cursor: pointer;
-  background-color: rgb(43, 70, 67);
+  background-color: rgb(255, 0, 0);
   color: #ffffff
   
 }
 .text-card{
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 600;
   
 }
 .time-card{
