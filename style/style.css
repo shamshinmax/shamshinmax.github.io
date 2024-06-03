@@ -43,9 +43,6 @@ a {
   margin: 0 auto;
   
 }
-input{
-  z-index:10;
-}
 .card {
   padding: 85px 25px;
   max-width: 350px;
@@ -59,11 +56,7 @@ input{
   
 }
 img{
-  position: absolute;
-  top: 34%;
-  left: -27%;
   overflow: hidden;
-
 }
 .a-card {
   display: inline-block;
