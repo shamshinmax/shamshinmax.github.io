@@ -43,6 +43,9 @@ a {
   margin: 0 auto;
   
 }
+input{
+  z-index:10;
+}
 .card {
   padding: 85px 25px;
   max-width: 350px;
