@@ -57,8 +57,9 @@ a {
 }
 img{
   position: absolute;
-  top:40%;
-  left: 30%;
+  top: 34%;
+  left: -27%;
+  overflow: hidden;
 }
 .a-card {
   display: inline-block;
